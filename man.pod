@@ -1,0 +1,40 @@
+=head1 NAME
+
+Data Filterer
+
+=head1 SYNOPSIS
+
+  This script filters out lines from a text file based on specified filters.
+  The output of the filtered result will be a file with a "-filtered" appended
+  to its name.
+  
+  Note: If a line starts with a whitespace, it is treated as a continuation of
+  the previous line.
+
+=head1 OPTIONS
+
+  --file
+    Required. Input file to filter by.
+
+  --filter F1
+    Required. Data to filter out. For multiple filters, specify this option
+    multiple times. Example: --filter foo --filter bar
+
+  --keep K1
+    Optional. Data to not be filtered out. If a line contains the filtered
+    string and the keep string, the keep string takes precendence. For
+    multiple keep keywords, specify this option multiple times. Example:
+    "--filter foo --keep bar --keep baz" will not filter out any lines that
+    contain "bar" or "baz".
+
+  --ignoreheaders
+    Optional. Number of headers to ignore. If not provided, all rows will be 
+    evaluated.
+
+  --caseinsensitive
+    Optional. Do case-insensitive filter.
+
+  --help
+    Optional. Display this help message.
+
+=cut
