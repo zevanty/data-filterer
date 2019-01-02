@@ -26,3 +26,6 @@ The output of the filtered result will be a file with a `-filtered` appended to 
 
 `--help`  
 **Optional.** Display the help message.
+
+## Example
+A sample data has been provided under `example.csv`. Data is randomly generated. Any resemblance to real persons, living or dead, is purely coincidental.
